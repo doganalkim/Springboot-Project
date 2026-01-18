@@ -20,7 +20,7 @@ public class NoteCreateResponse {
     public String getContent() {
         return content;
     }
-    private UUID noteId;
-    private String title;
-    private String content;
+    private final UUID noteId;
+    private final String title;
+    private final String content;
 }
