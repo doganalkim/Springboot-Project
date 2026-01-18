@@ -1,7 +1,10 @@
 package com.example.noteapi.dto;
 
+import lombok.Getter;
+
 import java.util.UUID;
 
+@Getter
 public class NoteCreateResponse {
     public NoteCreateResponse(UUID noteId, String title, String content) {
         this.noteId = noteId;
@@ -9,17 +12,6 @@ public class NoteCreateResponse {
         this.content = content;
     }
 
-    public UUID getNoteId() {
-        return noteId;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getContent() {
-        return content;
-    }
     private final UUID noteId;
     private final String title;
     private final String content;
